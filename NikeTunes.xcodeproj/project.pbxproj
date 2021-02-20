@@ -45,8 +45,6 @@
 		C02D997025DF012500D25A93 /* NikeTunesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NikeTunesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C02D997425DF012500D25A93 /* NikeTunesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikeTunesTests.swift; sourceTree = "<group>"; };
 		C02D997625DF012500D25A93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C02D997F25DF012500D25A93 /* NikeTunesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikeTunesUITests.swift; sourceTree = "<group>"; };
-		C02D998125DF012500D25A93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C02D99E325DF038100D25A93 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		C08F023025E0A4E9007BDE7F /* NKAlbumsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKAlbumsViewController.swift; sourceTree = "<group>"; };
 		C08F023525E0A59E007BDE7F /* NKAlbumDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NKAlbumDetailViewController.swift; sourceTree = "<group>"; };
@@ -83,7 +81,6 @@
 			children = (
 				C02D995C25DF012500D25A93 /* NikeTunes */,
 				C02D997325DF012500D25A93 /* NikeTunesTests */,
-				C02D997E25DF012500D25A93 /* NikeTunesUITests */,
 				C02D995B25DF012500D25A93 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -123,15 +120,6 @@
 				C02D997625DF012500D25A93 /* Info.plist */,
 			);
 			path = NikeTunesTests;
-			sourceTree = "<group>";
-		};
-		C02D997E25DF012500D25A93 /* NikeTunesUITests */ = {
-			isa = PBXGroup;
-			children = (
-				C02D997F25DF012500D25A93 /* NikeTunesUITests.swift */,
-				C02D998125DF012500D25A93 /* Info.plist */,
-			);
-			path = NikeTunesUITests;
 			sourceTree = "<group>";
 		};
 		C08F022225E0A362007BDE7F /* ViewModels */ = {

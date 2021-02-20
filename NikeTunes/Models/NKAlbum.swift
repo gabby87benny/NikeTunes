@@ -19,6 +19,7 @@ struct Content: Codable {
 }
 
 struct NKAlbum: Codable {
+    let albumId: String
     let artistName: String
     let name: String
     let artworkUrl100: String
@@ -26,6 +27,17 @@ struct NKAlbum: Codable {
     let copyright: String
     let genres: [OneGenre]
     let url: String
+    
+    enum CodingKeys: String, CodingKey {
+        case albumId = "id"
+        case artistName
+        case name
+        case artworkUrl100
+        case releaseDate
+        case copyright
+        case genres
+        case url
+    }
 }
 
 struct OneGenre: Codable {

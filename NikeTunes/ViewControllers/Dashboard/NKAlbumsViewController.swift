@@ -8,6 +8,7 @@
 import UIKit
 
 struct NKAlbumsViewControllerConstants {
+    static let pageTitle = "Nike Music Albums"
     static let albumCellHeight: CGFloat = 200
     static let albumsTableViewIdentifier = "NKAlbumsTableViewId"
 }
@@ -36,6 +37,7 @@ class NKAlbumsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = NKAlbumsViewControllerConstants.pageTitle
         view.backgroundColor = .white
         setUpHomeView()
         initializeSpinner()
@@ -95,6 +97,7 @@ extension NKAlbumsViewController: UITableViewDataSource {
             return UITableViewCell()
         }
         
+        cell.albumInfo = albumsViewModel.album(at: indexPath)
         return cell
     }
 }
@@ -103,6 +106,11 @@ extension NKAlbumsViewController: UITableViewDataSource {
 
 extension NKAlbumsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
+        tableView.deselectRow(at: indexPath, animated: false)
+        let albumInfo = albumsViewModel.album(at: indexPath)
+        let albumDetail = NKAlbumDetailViewController()
+        albumDetail.album = albumInfo
+        albumDetail.modalPresentationStyle = .fullScreen
+        self.navigationController?.pushViewController(albumDetail, animated: true)
     }
 }

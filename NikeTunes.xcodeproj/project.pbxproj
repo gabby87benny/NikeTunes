@@ -20,6 +20,9 @@
 		C08F024D25E0A88A007BDE7F /* NKAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08F024C25E0A88A007BDE7F /* NKAlbum.swift */; };
 		C08F025225E0A8D6007BDE7F /* NKTunesAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08F025125E0A8D6007BDE7F /* NKTunesAPIManager.swift */; };
 		C08F025725E0A928007BDE7F /* NKAlbumsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08F025625E0A928007BDE7F /* NKAlbumsViewModel.swift */; };
+		C08F025F25E0AE95007BDE7F /* NKAlbumTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08F025E25E0AE95007BDE7F /* NKAlbumTableCell.swift */; };
+		C08F026625E0C951007BDE7F /* ActivityIndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08F026525E0C951007BDE7F /* ActivityIndicatorViewController.swift */; };
+		C08F026A25E0C9AD007BDE7F /* NKAlertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08F026925E0C9AD007BDE7F /* NKAlertPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,9 @@
 		C08F024C25E0A88A007BDE7F /* NKAlbum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NKAlbum.swift; sourceTree = "<group>"; };
 		C08F025125E0A8D6007BDE7F /* NKTunesAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NKTunesAPIManager.swift; sourceTree = "<group>"; };
 		C08F025625E0A928007BDE7F /* NKAlbumsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NKAlbumsViewModel.swift; sourceTree = "<group>"; };
+		C08F025E25E0AE95007BDE7F /* NKAlbumTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NKAlbumTableCell.swift; sourceTree = "<group>"; };
+		C08F026525E0C951007BDE7F /* ActivityIndicatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorViewController.swift; sourceTree = "<group>"; };
+		C08F026925E0C9AD007BDE7F /* NKAlertPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKAlertPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,13 +100,13 @@
 		C02D995C25DF012500D25A93 /* NikeTunes */ = {
 			isa = PBXGroup;
 			children = (
+				C02D99E325DF038100D25A93 /* README.md */,
 				C08F023A25E0A5DF007BDE7F /* Extensions */,
 				C08F022525E0A362007BDE7F /* Models */,
 				C08F024325E0A680007BDE7F /* Views */,
 				C08F022225E0A362007BDE7F /* ViewModels */,
 				C08F022325E0A362007BDE7F /* ViewControllers */,
 				C08F022625E0A363007BDE7F /* APIManagers */,
-				C02D99E325DF038100D25A93 /* README.md */,
 				C02D995D25DF012500D25A93 /* AppDelegate.swift */,
 				C02D995F25DF012500D25A93 /* SceneDelegate.swift */,
 				C02D996625DF012500D25A93 /* Assets.xcassets */,
@@ -139,6 +145,7 @@
 		C08F022325E0A362007BDE7F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C08F026425E0C951007BDE7F /* LoadingIndicatorViewController */,
 				C08F022F25E0A4E9007BDE7F /* Dashboard */,
 				C08F022E25E0A4E9007BDE7F /* DetailsViewController */,
 			);
@@ -172,6 +179,7 @@
 		C08F022F25E0A4E9007BDE7F /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				C08F025D25E0AE58007BDE7F /* Cell */,
 				C08F023025E0A4E9007BDE7F /* NKAlbumsViewController.swift */,
 			);
 			path = Dashboard;
@@ -188,9 +196,26 @@
 		C08F024325E0A680007BDE7F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C08F026925E0C9AD007BDE7F /* NKAlertPresenter.swift */,
 				C08F024425E0A6E3007BDE7F /* NKAlbumsImageView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		C08F025D25E0AE58007BDE7F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C08F025E25E0AE95007BDE7F /* NKAlbumTableCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C08F026425E0C951007BDE7F /* LoadingIndicatorViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C08F026525E0C951007BDE7F /* ActivityIndicatorViewController.swift */,
+			);
+			path = LoadingIndicatorViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,12 +321,15 @@
 				C08F023625E0A59E007BDE7F /* NKAlbumDetailViewController.swift in Sources */,
 				C08F024525E0A6E3007BDE7F /* NKAlbumsImageView.swift in Sources */,
 				C08F025725E0A928007BDE7F /* NKAlbumsViewModel.swift in Sources */,
+				C08F026625E0C951007BDE7F /* ActivityIndicatorViewController.swift in Sources */,
 				C02D995E25DF012500D25A93 /* AppDelegate.swift in Sources */,
 				C08F024D25E0A88A007BDE7F /* NKAlbum.swift in Sources */,
 				C08F023C25E0A657007BDE7F /* UIView+NKExtensions.swift in Sources */,
 				C02D996025DF012500D25A93 /* SceneDelegate.swift in Sources */,
 				C08F023125E0A4E9007BDE7F /* NKAlbumsViewController.swift in Sources */,
 				C08F025225E0A8D6007BDE7F /* NKTunesAPIManager.swift in Sources */,
+				C08F026A25E0C9AD007BDE7F /* NKAlertPresenter.swift in Sources */,
+				C08F025F25E0AE95007BDE7F /* NKAlbumTableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,8 +8,11 @@
 import UIKit
 
 struct NKAlbumsViewControllerConstants {
+    static let pageTitle = "Nike Music Albums"
     static let albumCellHeight: CGFloat = 200
     static let albumsTableViewIdentifier = "NKAlbumsTableViewId"
+    static let alertTitle = "Error"
+    static let alertMessage = "Error in Album API service."
 }
 
 class NKAlbumsViewController: UIViewController {
@@ -36,6 +39,7 @@ class NKAlbumsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = NKAlbumsViewControllerConstants.pageTitle
         view.backgroundColor = .white
         setUpHomeView()
         initializeSpinner()
@@ -58,6 +62,12 @@ class NKAlbumsViewController: UIViewController {
         tableViewAlbums.translatesAutoresizingMaskIntoConstraints = false
     }
     
+    /**
+    Requests view model to fetch albums from API manager.
+
+    - Returns: None.
+    */
+    
     func loadAlbums() {
         spinnerView?.showActivityIndicatorView(on: self)
         albumsViewModel.fetchAlbums { [weak self] (albums, error) in
@@ -71,8 +81,8 @@ class NKAlbumsViewController: UIViewController {
                 print("Error while fetching albums list : \(nError)")
                 guard let self = self else { return }
                 self.alertPresenter.present(from: self,
-                                            title: "Error",
-                                            message: "Error in Album API service.",
+                                            title: NKAlbumsViewControllerConstants.alertTitle,
+                                            message: NKAlbumsViewControllerConstants.alertMessage,
                                             dismissButtonTitle: "OK")
             }
         }
@@ -95,6 +105,7 @@ extension NKAlbumsViewController: UITableViewDataSource {
             return UITableViewCell()
         }
         
+        cell.albumInfo = albumsViewModel.album(at: indexPath)
         return cell
     }
 }
@@ -103,6 +114,11 @@ extension NKAlbumsViewController: UITableViewDataSource {
 
 extension NKAlbumsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
+        tableView.deselectRow(at: indexPath, animated: false)
+        let albumInfo = albumsViewModel.album(at: indexPath)
+        let albumDetail = NKAlbumDetailViewController()
+        albumDetail.album = albumInfo
+        albumDetail.modalPresentationStyle = .fullScreen
+        self.navigationController?.pushViewController(albumDetail, animated: true)
     }
 }

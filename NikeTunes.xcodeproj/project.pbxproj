@@ -9,11 +9,19 @@
 /* Begin PBXBuildFile section */
 		C02D5EA425E3483E0051F431 /* NKTunesAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02D5EA225E3483E0051F431 /* NKTunesAPIManager.swift */; };
 		C02D5EA525E3483E0051F431 /* NKImageCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02D5EA325E3483E0051F431 /* NKImageCacheManager.swift */; };
+		C02D5EB425E354510051F431 /* FakeActivityIndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02D5EAF25E354510051F431 /* FakeActivityIndicatorViewController.swift */; };
+		C02D5EB525E354510051F431 /* FakeNKAlertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02D5EB025E354510051F431 /* FakeNKAlertPresenter.swift */; };
+		C02D5EB625E354510051F431 /* FakeNKAlbumsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02D5EB125E354510051F431 /* FakeNKAlbumsViewModel.swift */; };
+		C02D5EB725E354510051F431 /* PartiallyFakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02D5EB225E354510051F431 /* PartiallyFakeViewController.swift */; };
+		C02D5EB825E354510051F431 /* FakeNKTunesAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02D5EB325E354510051F431 /* FakeNKTunesAPIManager.swift */; };
+		C02D5EC725E358730051F431 /* NKTunesAPIManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02D5EC325E358730051F431 /* NKTunesAPIManagerTests.swift */; };
+		C02D5EC825E358730051F431 /* NKAlertPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02D5EC425E358730051F431 /* NKAlertPresenterTests.swift */; };
+		C02D5EC925E358730051F431 /* NKAlbumsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02D5EC525E358730051F431 /* NKAlbumsViewModelTests.swift */; };
+		C02D5ECA25E358730051F431 /* NKAlbumsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02D5EC625E358730051F431 /* NKAlbumsViewControllerTests.swift */; };
 		C02D995E25DF012500D25A93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02D995D25DF012500D25A93 /* AppDelegate.swift */; };
 		C02D996025DF012500D25A93 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02D995F25DF012500D25A93 /* SceneDelegate.swift */; };
 		C02D996725DF012500D25A93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C02D996625DF012500D25A93 /* Assets.xcassets */; };
 		C02D996A25DF012500D25A93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C02D996825DF012500D25A93 /* LaunchScreen.storyboard */; };
-		C02D997525DF012500D25A93 /* NikeTunesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02D997425DF012500D25A93 /* NikeTunesTests.swift */; };
 		C02D99E425DF038100D25A93 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C02D99E325DF038100D25A93 /* README.md */; };
 		C08F023125E0A4E9007BDE7F /* NKAlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08F023025E0A4E9007BDE7F /* NKAlbumsViewController.swift */; };
 		C08F023625E0A59E007BDE7F /* NKAlbumDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08F023525E0A59E007BDE7F /* NKAlbumDetailViewController.swift */; };
@@ -39,6 +47,15 @@
 /* Begin PBXFileReference section */
 		C02D5EA225E3483E0051F431 /* NKTunesAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKTunesAPIManager.swift; sourceTree = "<group>"; };
 		C02D5EA325E3483E0051F431 /* NKImageCacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKImageCacheManager.swift; sourceTree = "<group>"; };
+		C02D5EAF25E354510051F431 /* FakeActivityIndicatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeActivityIndicatorViewController.swift; sourceTree = "<group>"; };
+		C02D5EB025E354510051F431 /* FakeNKAlertPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeNKAlertPresenter.swift; sourceTree = "<group>"; };
+		C02D5EB125E354510051F431 /* FakeNKAlbumsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeNKAlbumsViewModel.swift; sourceTree = "<group>"; };
+		C02D5EB225E354510051F431 /* PartiallyFakeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartiallyFakeViewController.swift; sourceTree = "<group>"; };
+		C02D5EB325E354510051F431 /* FakeNKTunesAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeNKTunesAPIManager.swift; sourceTree = "<group>"; };
+		C02D5EC325E358730051F431 /* NKTunesAPIManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKTunesAPIManagerTests.swift; sourceTree = "<group>"; };
+		C02D5EC425E358730051F431 /* NKAlertPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKAlertPresenterTests.swift; sourceTree = "<group>"; };
+		C02D5EC525E358730051F431 /* NKAlbumsViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKAlbumsViewModelTests.swift; sourceTree = "<group>"; };
+		C02D5EC625E358730051F431 /* NKAlbumsViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKAlbumsViewControllerTests.swift; sourceTree = "<group>"; };
 		C02D995A25DF012500D25A93 /* NikeTunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NikeTunes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C02D995D25DF012500D25A93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C02D995F25DF012500D25A93 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,7 +63,6 @@
 		C02D996925DF012500D25A93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C02D996B25DF012500D25A93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C02D997025DF012500D25A93 /* NikeTunesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NikeTunesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C02D997425DF012500D25A93 /* NikeTunesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikeTunesTests.swift; sourceTree = "<group>"; };
 		C02D997625DF012500D25A93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C02D99E325DF038100D25A93 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		C08F023025E0A4E9007BDE7F /* NKAlbumsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKAlbumsViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +101,18 @@
 				C02D5EA325E3483E0051F431 /* NKImageCacheManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		C02D5EAE25E354510051F431 /* TestFakes */ = {
+			isa = PBXGroup;
+			children = (
+				C02D5EAF25E354510051F431 /* FakeActivityIndicatorViewController.swift */,
+				C02D5EB025E354510051F431 /* FakeNKAlertPresenter.swift */,
+				C02D5EB125E354510051F431 /* FakeNKAlbumsViewModel.swift */,
+				C02D5EB225E354510051F431 /* PartiallyFakeViewController.swift */,
+				C02D5EB325E354510051F431 /* FakeNKTunesAPIManager.swift */,
+			);
+			path = TestFakes;
 			sourceTree = "<group>";
 		};
 		C02D995125DF012400D25A93 = {
@@ -127,7 +155,11 @@
 		C02D997325DF012500D25A93 /* NikeTunesTests */ = {
 			isa = PBXGroup;
 			children = (
-				C02D997425DF012500D25A93 /* NikeTunesTests.swift */,
+				C02D5EAE25E354510051F431 /* TestFakes */,
+				C02D5EC425E358730051F431 /* NKAlertPresenterTests.swift */,
+				C02D5EC325E358730051F431 /* NKTunesAPIManagerTests.swift */,
+				C02D5EC625E358730051F431 /* NKAlbumsViewControllerTests.swift */,
+				C02D5EC525E358730051F431 /* NKAlbumsViewModelTests.swift */,
 				C02D997625DF012500D25A93 /* Info.plist */,
 			);
 			path = NikeTunesTests;
@@ -329,7 +361,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C02D997525DF012500D25A93 /* NikeTunesTests.swift in Sources */,
+				C02D5EB425E354510051F431 /* FakeActivityIndicatorViewController.swift in Sources */,
+				C02D5EB525E354510051F431 /* FakeNKAlertPresenter.swift in Sources */,
+				C02D5EC825E358730051F431 /* NKAlertPresenterTests.swift in Sources */,
+				C02D5ECA25E358730051F431 /* NKAlbumsViewControllerTests.swift in Sources */,
+				C02D5EC925E358730051F431 /* NKAlbumsViewModelTests.swift in Sources */,
+				C02D5EB825E354510051F431 /* FakeNKTunesAPIManager.swift in Sources */,
+				C02D5EB625E354510051F431 /* FakeNKAlbumsViewModel.swift in Sources */,
+				C02D5EC725E358730051F431 /* NKTunesAPIManagerTests.swift in Sources */,
+				C02D5EB725E354510051F431 /* PartiallyFakeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

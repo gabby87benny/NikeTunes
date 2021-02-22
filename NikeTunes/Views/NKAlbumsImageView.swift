@@ -12,22 +12,27 @@ let imageCache = NSCache<AnyObject, AnyObject>()
 class NKAlbumsImageView: UIImageView {
 
     var task: URLSessionDataTask?
+    private let cacheManager: NKImageCacheManager_Protocol = NKImageCacheManager()
+    
+    /**
+    Downloads the image from server and loads in image using Cache operations
+
+    - Parameters:
+        - url: url to download the image
+     
+    - Returns: None.
+    */
     
     func loadImage(from url: URL) {
-        
         image = nil
+        task?.cancel()
         
-        if let task = task {
-            task.cancel()
-        }
-        
-        if let cachedImage = imageCache.object(forKey: url.absoluteString as AnyObject) as? UIImage {
-            image = cachedImage
+        self.cacheManager.retrieve(imageUrl: url.absoluteString) { [weak self] cachedImage in
+            self?.image = cachedImage
             return
         }
         
         task = URLSession.shared.dataTask(with: url) {(data, response, error) in
-            
             guard
                 let theData = data,
                 let newImage = UIImage(data: theData)
@@ -36,14 +41,13 @@ class NKAlbumsImageView: UIImageView {
                 return
             }
             
-            imageCache.setObject(newImage, forKey: url.absoluteString as AnyObject)
+            self.cacheManager.save(data: theData, forKey: url.absoluteString)
             
             DispatchQueue.main.async {
                 self.image = newImage
             }
         }
-        if let task = task {
-            task.resume()
-        }
+            
+        task?.resume()
     }
 }

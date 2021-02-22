@@ -7,6 +7,10 @@
 
 import UIKit
 
+struct NKAlbumDetailViewControllerConstants {
+    static let iTunesButtonText = "View in iTunes"
+}
+
 class NKAlbumDetailViewController: UIViewController {
     var album: NKAlbum?
     
@@ -61,7 +65,7 @@ class NKAlbumDetailViewController: UIViewController {
             iTunesButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
             iTunesButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20).isActive = true
             iTunesButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-            iTunesButton.setTitle("View in iTunes", for: .normal)
+            iTunesButton.setTitle(NKAlbumDetailViewControllerConstants.iTunesButtonText, for: .normal)
             iTunesButton.setTitleColor(.white, for: .normal)
             iTunesButton.backgroundColor = .darkGray
             iTunesButton.addTarget(self, action: #selector(openiTunes), for: .touchUpInside)

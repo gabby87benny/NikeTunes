@@ -22,6 +22,16 @@ protocol NKTunesAPIManager_Protocol {
 }
 
 class NKTunesAPIManager: NKTunesAPIManager_Protocol {
+    
+    /**
+    Get albums from Apple Tunes API.
+
+    - Parameters:
+       - completion: The completion handler to be fired after the data operations are over
+     
+    - Returns: None.
+    */
+    
     func getAlbums(completion: @escaping (Result<[NKAlbum], NKAlbumError>) -> Void) {
         guard let url = URL(string: NKTunesAPIManagerConstants.albumUrl) else {return}
         

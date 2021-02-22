@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C02D5EA425E3483E0051F431 /* NKTunesAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02D5EA225E3483E0051F431 /* NKTunesAPIManager.swift */; };
+		C02D5EA525E3483E0051F431 /* NKImageCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02D5EA325E3483E0051F431 /* NKImageCacheManager.swift */; };
 		C02D995E25DF012500D25A93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02D995D25DF012500D25A93 /* AppDelegate.swift */; };
 		C02D996025DF012500D25A93 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02D995F25DF012500D25A93 /* SceneDelegate.swift */; };
 		C02D996725DF012500D25A93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C02D996625DF012500D25A93 /* Assets.xcassets */; };
@@ -18,7 +20,6 @@
 		C08F023C25E0A657007BDE7F /* UIView+NKExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08F023B25E0A657007BDE7F /* UIView+NKExtensions.swift */; };
 		C08F024525E0A6E3007BDE7F /* NKAlbumsImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08F024425E0A6E3007BDE7F /* NKAlbumsImageView.swift */; };
 		C08F024D25E0A88A007BDE7F /* NKAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08F024C25E0A88A007BDE7F /* NKAlbum.swift */; };
-		C08F025225E0A8D6007BDE7F /* NKTunesAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08F025125E0A8D6007BDE7F /* NKTunesAPIManager.swift */; };
 		C08F025725E0A928007BDE7F /* NKAlbumsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08F025625E0A928007BDE7F /* NKAlbumsViewModel.swift */; };
 		C08F025F25E0AE95007BDE7F /* NKAlbumTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08F025E25E0AE95007BDE7F /* NKAlbumTableCell.swift */; };
 		C08F026625E0C951007BDE7F /* ActivityIndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08F026525E0C951007BDE7F /* ActivityIndicatorViewController.swift */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C02D5EA225E3483E0051F431 /* NKTunesAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKTunesAPIManager.swift; sourceTree = "<group>"; };
+		C02D5EA325E3483E0051F431 /* NKImageCacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKImageCacheManager.swift; sourceTree = "<group>"; };
 		C02D995A25DF012500D25A93 /* NikeTunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NikeTunes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C02D995D25DF012500D25A93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C02D995F25DF012500D25A93 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,7 +54,6 @@
 		C08F023B25E0A657007BDE7F /* UIView+NKExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+NKExtensions.swift"; sourceTree = "<group>"; };
 		C08F024425E0A6E3007BDE7F /* NKAlbumsImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NKAlbumsImageView.swift; sourceTree = "<group>"; };
 		C08F024C25E0A88A007BDE7F /* NKAlbum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NKAlbum.swift; sourceTree = "<group>"; };
-		C08F025125E0A8D6007BDE7F /* NKTunesAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NKTunesAPIManager.swift; sourceTree = "<group>"; };
 		C08F025625E0A928007BDE7F /* NKAlbumsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NKAlbumsViewModel.swift; sourceTree = "<group>"; };
 		C08F025E25E0AE95007BDE7F /* NKAlbumTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NKAlbumTableCell.swift; sourceTree = "<group>"; };
 		C08F026525E0C951007BDE7F /* ActivityIndicatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +78,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C02D5EA125E3483E0051F431 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				C02D5EA225E3483E0051F431 /* NKTunesAPIManager.swift */,
+				C02D5EA325E3483E0051F431 /* NKImageCacheManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		C02D995125DF012400D25A93 = {
 			isa = PBXGroup;
 			children = (
@@ -98,12 +109,12 @@
 			isa = PBXGroup;
 			children = (
 				C02D99E325DF038100D25A93 /* README.md */,
+				C02D5EA125E3483E0051F431 /* Managers */,
 				C08F023A25E0A5DF007BDE7F /* Extensions */,
 				C08F022525E0A362007BDE7F /* Models */,
 				C08F024325E0A680007BDE7F /* Views */,
 				C08F022225E0A362007BDE7F /* ViewModels */,
 				C08F022325E0A362007BDE7F /* ViewControllers */,
-				C08F022625E0A363007BDE7F /* APIManagers */,
 				C02D995D25DF012500D25A93 /* AppDelegate.swift */,
 				C02D995F25DF012500D25A93 /* SceneDelegate.swift */,
 				C02D996625DF012500D25A93 /* Assets.xcassets */,
@@ -146,14 +157,6 @@
 				C08F024C25E0A88A007BDE7F /* NKAlbum.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		C08F022625E0A363007BDE7F /* APIManagers */ = {
-			isa = PBXGroup;
-			children = (
-				C08F025125E0A8D6007BDE7F /* NKTunesAPIManager.swift */,
-			);
-			path = APIManagers;
 			sourceTree = "<group>";
 		};
 		C08F022E25E0A4E9007BDE7F /* DetailsViewController */ = {
@@ -306,16 +309,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C02D5EA525E3483E0051F431 /* NKImageCacheManager.swift in Sources */,
 				C08F023625E0A59E007BDE7F /* NKAlbumDetailViewController.swift in Sources */,
 				C08F024525E0A6E3007BDE7F /* NKAlbumsImageView.swift in Sources */,
 				C08F025725E0A928007BDE7F /* NKAlbumsViewModel.swift in Sources */,
+				C02D5EA425E3483E0051F431 /* NKTunesAPIManager.swift in Sources */,
 				C08F026625E0C951007BDE7F /* ActivityIndicatorViewController.swift in Sources */,
 				C02D995E25DF012500D25A93 /* AppDelegate.swift in Sources */,
 				C08F024D25E0A88A007BDE7F /* NKAlbum.swift in Sources */,
 				C08F023C25E0A657007BDE7F /* UIView+NKExtensions.swift in Sources */,
 				C02D996025DF012500D25A93 /* SceneDelegate.swift in Sources */,
 				C08F023125E0A4E9007BDE7F /* NKAlbumsViewController.swift in Sources */,
-				C08F025225E0A8D6007BDE7F /* NKTunesAPIManager.swift in Sources */,
 				C08F026A25E0C9AD007BDE7F /* NKAlertPresenter.swift in Sources */,
 				C08F025F25E0AE95007BDE7F /* NKAlbumTableCell.swift in Sources */,
 			);

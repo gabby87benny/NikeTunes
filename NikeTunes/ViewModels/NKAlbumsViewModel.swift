@@ -17,6 +17,15 @@ class NKAlbumsViewModel {
         self.mobileService = mobileService
     }
     
+    /**
+    Fetch album from API Manager and fires the completion.
+
+    - Parameters:
+       - completion: The completion handler to be fired after data receival
+     
+    - Returns: None.
+    */
+    
     func fetchAlbums(completion: @escaping CompletionResult) {
         self.mobileService.getAlbums {[weak self] result in
             switch result {

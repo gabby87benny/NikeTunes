@@ -22,7 +22,6 @@
 		C02D996025DF012500D25A93 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02D995F25DF012500D25A93 /* SceneDelegate.swift */; };
 		C02D996725DF012500D25A93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C02D996625DF012500D25A93 /* Assets.xcassets */; };
 		C02D996A25DF012500D25A93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C02D996825DF012500D25A93 /* LaunchScreen.storyboard */; };
-		C02D99E425DF038100D25A93 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C02D99E325DF038100D25A93 /* README.md */; };
 		C08F023125E0A4E9007BDE7F /* NKAlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08F023025E0A4E9007BDE7F /* NKAlbumsViewController.swift */; };
 		C08F023625E0A59E007BDE7F /* NKAlbumDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08F023525E0A59E007BDE7F /* NKAlbumDetailViewController.swift */; };
 		C08F023C25E0A657007BDE7F /* UIView+NKExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08F023B25E0A657007BDE7F /* UIView+NKExtensions.swift */; };
@@ -64,7 +63,6 @@
 		C02D996B25DF012500D25A93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C02D997025DF012500D25A93 /* NikeTunesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NikeTunesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C02D997625DF012500D25A93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C02D99E325DF038100D25A93 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		C08F023025E0A4E9007BDE7F /* NKAlbumsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKAlbumsViewController.swift; sourceTree = "<group>"; };
 		C08F023525E0A59E007BDE7F /* NKAlbumDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NKAlbumDetailViewController.swift; sourceTree = "<group>"; };
 		C08F023B25E0A657007BDE7F /* UIView+NKExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+NKExtensions.swift"; sourceTree = "<group>"; };
@@ -136,7 +134,6 @@
 		C02D995C25DF012500D25A93 /* NikeTunes */ = {
 			isa = PBXGroup;
 			children = (
-				C02D99E325DF038100D25A93 /* README.md */,
 				C02D5EA125E3483E0051F431 /* Managers */,
 				C08F023A25E0A5DF007BDE7F /* Extensions */,
 				C08F022525E0A362007BDE7F /* Models */,
@@ -323,7 +320,6 @@
 			files = (
 				C02D996A25DF012500D25A93 /* LaunchScreen.storyboard in Resources */,
 				C02D996725DF012500D25A93 /* Assets.xcassets in Resources */,
-				C02D99E425DF038100D25A93 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

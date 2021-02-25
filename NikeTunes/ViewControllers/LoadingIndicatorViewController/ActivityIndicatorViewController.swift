@@ -8,7 +8,7 @@
 import UIKit
 
 class ActivityIndicatorViewController: UIViewController {
-    var spinner: UIActivityIndicatorView!
+    var spinner: UIActivityIndicatorView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +32,7 @@ class ActivityIndicatorViewController: UIViewController {
     
     func showActivityIndicatorView(on parent: UIViewController) {
         parent.view.addSubview(self.view)
-        spinner.startAnimating()
+        self.spinner?.startAnimating()
     }
 
     /**
@@ -40,7 +40,7 @@ class ActivityIndicatorViewController: UIViewController {
     */
     
     func removeActivityIndicatorView() {
-        spinner.stopAnimating()
+        self.spinner?.stopAnimating()
         self.view.removeFromSuperview()
     }
 }
